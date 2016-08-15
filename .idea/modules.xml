@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Header2ActionBar/Header2ActionBar.iml" filepath="$PROJECT_DIR$/Header2ActionBar/Header2ActionBar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MaterialRefreshLayout_library/MaterialRefreshLayout_library.iml" filepath="$PROJECT_DIR$/MaterialRefreshLayout_library/MaterialRefreshLayout_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NineLayout/NineLayout.iml" filepath="$PROJECT_DIR$/NineLayout/NineLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PushSDK/PushSDK.iml" filepath="$PROJECT_DIR$/PushSDK/PushSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XListView-master/XListView-master.iml" filepath="$PROJECT_DIR$/XListView-master/XListView-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crop_library/crop_library.iml" filepath="$PROJECT_DIR$/crop_library/crop_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_PullToRefresh/library_PullToRefresh.iml" filepath="$PROJECT_DIR$/library_PullToRefresh/library_PullToRefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/miwu.iml" filepath="$PROJECT_DIR$/miwu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/okhttp/okhttp.iml" filepath="$PROJECT_DIR$/okhttp/okhttp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pickerview/pickerview.iml" filepath="$PROJECT_DIR$/pickerview/pickerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/slider/slider.iml" filepath="$PROJECT_DIR$/slider/slider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/social_sdk_library_project/social_sdk_library_project.iml" filepath="$PROJECT_DIR$/social_sdk_library_project/social_sdk_library_project.iml" />
+    </modules>
+  </component>
+</project>
