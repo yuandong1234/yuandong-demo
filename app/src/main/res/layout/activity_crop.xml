@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="yd.miwu.testdemo.CropActivity">
+
+    <RelativeLayout
+        android:id="@+id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#FF5077">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="CropActivity"
+            android:textColor="@android:color/white"
+            android:textSize="17dp" />
+        <RelativeLayout
+            android:id="@+id/pick"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/crop"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.oginotihiro.cropview.CropView
+        android:id="@+id/cropView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleBar"
+        android:visibility="gone"/>
+
+
+
+    <ImageView
+        android:id="@+id/iv_picked"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/menuItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="cancel"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:background="#FF5077"/>
+        <TextView
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_marginLeft="25dp"
+            android:text="done"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="#FF5077"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

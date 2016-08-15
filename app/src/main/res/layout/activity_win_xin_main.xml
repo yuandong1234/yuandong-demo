@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainFrame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="yd.miwu.winxindemo.WinXinMainActivity">
+    <RelativeLayout
+        android:id="@+id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#FF5077">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="微信朋友圈"
+            android:textColor="@android:color/white"
+            android:textSize="17dp" />
+        <TextView
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="发送"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/titleBar"
+        android:layout_margin="8dp"
+        android:background="@null"
+        android:gravity="left|top"
+        android:hint="想说点什么..."/>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:horizontalSpacing="3dp"
+        android:numColumns="4"
+        android:layout_below="@id/input"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp" />
+
+</RelativeLayout>

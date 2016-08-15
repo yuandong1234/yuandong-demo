@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="yd.miwu.testdemo.AutoLoadGridViewActivity">
+
+    <RelativeLayout
+        android:id="@+id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#FF5077">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="AutoLoadGridViewActivity"
+            android:textColor="@android:color/white"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pullToRefreshGridView"
+        android:layout_below="@id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:numColumns="2"
+        android:columnWidth="100dp"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:gravity="center"
+        android:scrollbars="none"
+        android:background="@android:color/white"
+        ptr:ptrMode="both"
+        ptr:ptrDrawableStart="@mipmap/tableview_pull_refresh_arrow_down"
+        ptr:ptrDrawable="@mipmap/tableview_pull_refresh_arrow_down"
+        ptr:ptrHeaderTextColor="#FF0000"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrHeaderBackground="@mipmap/icon_one"
+        />
+
+</RelativeLayout>

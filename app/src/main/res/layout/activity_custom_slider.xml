@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="yd.miwu.testdemo.CustomSliderActivity">
+    <RelativeLayout
+        android:id="@+id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#FF5077"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="17dp"
+            android:text="CustomSliderActivity"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleBar"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbt_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="左近右出" />
+
+            <RadioButton
+                android:id="@+id/rbt_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="右进左出" />
+
+            <RadioButton
+                android:id="@+id/rbt_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上进下出" />
+
+            <RadioButton
+                android:id="@+id/rbt_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下进上出" />
+
+            <RadioButton
+                android:id="@+id/rbt_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="水平进出" />
+
+            <RadioButton
+                android:id="@+id/rbt_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="竖直进出" />
+
+            <RadioButton
+                android:id="@+id/rbt_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="随意进出" />
+        </RadioGroup>
+
+        <Switch
+            android:layout_marginLeft="35dp"
+            android:id="@+id/swich"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/radio_group"
+            android:text="是否从边缘滑动" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/dialog"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FF5077"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:text="Dialog弹框"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"/>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

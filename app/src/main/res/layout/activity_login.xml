@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="yd.miwu.activity.login.LoginActivity">
+
+<LinearLayout
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:gravity="center"
+    android:layout_marginBottom="50dp"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/login_qq"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/qq_allshare_normal"/>
+    <ImageView
+        android:id="@+id/login_weixin"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:src="@mipmap/weixin_sdk_login"/>
+
+
+</LinearLayout>
+
+</RelativeLayout>

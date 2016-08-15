@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="yd.miwu.testdemo.ViewPagerInfiniteSlidingActivity">
+
+    <RelativeLayout
+        android:id="@+id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#FF5077">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Viewpager无限滑动"
+            android:textColor="@android:color/white"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+
+    <yd.miwu.view.PicRollingDisplayView.PicRollingDisplayView
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/picRollingDisplayView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleBar"
+        custom:defaultPicSrc="@mipmap/ic_launcher"
+        custom:timeGap="2"/>
+
+    <yd.miwu.view.PicRollingDisplayView.PositionIndicatorView
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/indicatorView"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:layout_alignBottom="@id/picRollingDisplayView"
+        android:layout_marginBottom="35dp"
+        android:gravity="center_horizontal"
+        custom:defaultSrc="@drawable/cricle_white"
+        custom:gap="4dip"
+        custom:indicatorHeight="8dip"
+        custom:indicatorWidth="8dip"
+        custom:selectedSrc="@drawable/cricle_red" />
+
+
+</RelativeLayout>

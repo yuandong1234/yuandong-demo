@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="yd.miwu" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_miwu"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+        <!-- main 界面 -->
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- base Activity界面 -->
+        <activity android:name=".base.BaseActivity" />
+
+        <!-- 首页 -->
+        <activity
+            android:name=".activity.FirstActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 登录界面 -->
+        <activity
+            android:name=".activity.login.LoginActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 第三方登录界面 -->
+        <activity
+            android:name=".activity.login.ThirdPartyLoginActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 分享界面 -->
+        <activity
+            android:name=".activity.share.ShareActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 分享base界面 -->
+        <activity
+            android:name=".activity.share.BaseShareActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- WebView base界面 -->
+        <activity
+            android:name=".activity.BaseWebViewActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- WebView 加载界面 -->
+        <activity
+            android:name=".activity.WebViewActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- TabLayout ViewPager Fragment 联动 -->
+        <activity
+            android:name=".testdemo.TabLayoutActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 下载Apk 安装apk -->
+        <activity
+            android:name=".testdemo.DownFileActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 自定义ProgressBarDialog -->
+        <activity
+            android:name=".testdemo.ProgressBarActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- SwipeRefreshLayout 新控件下拉刷新 -->
+        <activity
+            android:name=".testdemo.SwipeRefreshLayoutActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- CardView 新控件 -->
+        <activity
+            android:name=".testdemo.CardViewActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 新控件ToolBar -->
+        <activity
+            android:name=".testdemo.ToolBarActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 自定义主题ActionBar -->
+        <activity
+            android:name=".testdemo.HeaderActionBarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
+
+        <!-- 自定义actionbar 颜色渐变 -->
+        <activity
+            android:name=".testdemo.ScrollViewAlpraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SecondActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- Fresco的使用 -->
+        <activity
+            android:name=".testdemo.FrescoLoadImageActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- PullToRefreshGridView 的使用以及自动下拉加载 -->
+        <activity
+            android:name=".testdemo.PullToRefreshGridViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".base.NetBaseActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 下拉自动加载GridView -->
+        <activity
+            android:name=".testdemo.AutoLoadGridViewActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 自定义XListView -->
+        <activity
+            android:name=".testdemo.CustomRefreshListViewActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 自定义XListView 下拉自动加载 -->
+        <activity
+            android:name=".testdemo.AutoLoadXlListViewActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 新控件侧拉栏 -->
+        <activity
+            android:name=".testdemo.DrawerLayoutActivtiy"
+            android:screenOrientation="portrait" />
+
+        <!-- MaterialRefreshLayout 刷新 -->
+        <activity
+            android:name=".testdemo.MaterialRefreshLayoutActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- slider 自定义滑进滑出 -->
+        <activity
+            android:name=".testdemo.CustomSliderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme2" />
+
+        <!-- 引导页 -->
+        <activity
+            android:name=".testdemo.GuideActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 利用给惠自定义轮滚图无限滑动 -->
+        <activity
+            android:name=".testdemo.ViewPagerInfiniteSlidingActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 利用第三方自定义轮滚图无限滑动 -->
+        <activity
+            android:name=".testdemo.ScrollViewPagerActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 自定义轮滚图无限滑动 -->
+        <activity
+            android:name=".testdemo.YDScrollViewViewPagerActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 仿微信朋友圈 -->
+        <activity
+            android:name=".testdemo.NineLayoutActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 仿微信朋友圈图片浏览 -->
+        <activity
+            android:name=".testdemo.ImageViewPagerActivity"
+            android:screenOrientation="portrait" />
+        <!-- 仿微信发表图片 -->
+        <activity
+            android:name=".ThreeActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 带清除的EditText -->
+        <activity
+            android:name=".testdemo.ClearEditTextActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 模仿微信发表页面 -->
+        <activity
+            android:name=".winxindemo.WinXinMainActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 模仿微信图片相册界面 -->
+        <activity
+            android:name=".winxindemo.PhotoAlbumsActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 模仿微信图片选择界面 -->
+        <activity
+            android:name=".winxindemo.ImageChooseActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 时间地址选择 -->
+        <activity
+            android:name=".testdemo.PickViewActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 走马灯 -->
+        <activity
+            android:name=".testdemo.AytuScrollTextViewActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 可以部分文字点击的TextView -->
+        <activity
+            android:name=".testdemo.ClickAbleTextViewActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 广告轮番图BannerViewActivity -->
+        <activity
+            android:name=".testdemo.BannerViewActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 广告notice上下轮播提醒 -->
+        <activity
+            android:name=".testdemo.BannerNoticeActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- RecyclerView水平滑动列表 -->
+        <activity
+            android:name=".testdemo.RecyclerViewActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 图片裁切界面-->
+        <activity android:name=".testdemo.CropActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 首页父类MainGroupActivity-->
+        <activity android:name=".testdemo.MainGroupActivity"
+            android:screenOrientation="portrait" />
+
+        <!--第一页-->
+        <activity android:name=".testdemo.FirstPageActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 第二页-->
+        <activity android:name=".testdemo.SecondPageActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 第三页-->
+        <activity android:name=".testdemo.ThridPageActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 第四页-->
+        <activity android:name=".testdemo.ForthPageActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 第五页-->
+        <activity android:name=".testdemo.FifthPageActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 仿土巴兔界面ViewPager横滑界面-->
+        <activity android:name=".tubatu.TubaTuActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- -->
+        <activity android:name=".item_viewpager_one"
+            android:screenOrientation="portrait" />
+
+        <!-- 弹簧动画界面ReBound-->
+        <activity android:name=".testdemo.ReBoundActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- OkHttp的使用界面-->
+        <activity android:name=".testdemo.OkHttpActivity"
+            android:screenOrientation="portrait" />
+
+
+
+
+        <!-- 友盟UMENG_APPKEY、UMENG_MESSAGE_SECRET -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="572c6a8367e58e63c4001f15" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="8d6b2c0e4e1f55e132a84e8cee04251e" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="MiWu" />
+
+
+        <!-- android:value="d0d091d1c56a79a2a0dfabb4870cb23e" /> -->
+
+
+        <!-- 友盟分享 -->
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+
+        <!-- 微信平台 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 新浪微博 -->
+        <activity
+            android:name=".WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false" />
+
+        <!-- QQ、Qzone -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105413062" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+
+</manifest>
