@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="unspecified"><source path="D:\Android\testPalace\miwu\library_PullToRefresh\build\intermediates\exploded-aar\miwu\social_sdk_library_project\unspecified\assets"/></dataSet><dataSet config="debug"><source path="D:\Android\testPalace\miwu\library_PullToRefresh\build\intermediates\bundles\debug\assets"/></dataSet><dataSet config="main"><source path="D:\Android\testPalace\miwu\library_PullToRefresh\src\androidTest\assets"/></dataSet></merger>
